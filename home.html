@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote - Conectando Vidas e Causas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f60;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f60;
+            padding: 10px 20px;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #f60;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        footer {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .banner {
+            text-align: center;
+            padding: 40px;
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        .banner img.active {
+            opacity: 1;
+        }
+
+
+        
+        .title {
+            
+            text-align: center; /* Centraliza o texto */
+            margin: 0 auto; /* Garante que a seção fique centralizada */
+            max-width: 1200px; /* Define a largura máxima para o conteúdo */
+            padding: 80px; /* Espaçamento interno (superior, inferior, esquerdo e direito) */
+            font-size: 16px; /* Ajusta o tamanho do parágrafo */
+            color: #333333d2; /* Muda a cor do parágrafo */
+            
+        }
+
+        .intro {
+            line-height: 1.6; /* Aumenta o espaçamento entre as linhas do texto */
+            margin: 0px 40px; /* Espaçamento externo (superior/inferior 20px, laterais 40px) */
+            text-align: center; /* Se quiser justificar o texto */
+            font-size: 16px; /* Ajusta o tamanho do parágrafo */
+            color: #666; /* Muda a cor do parágrafo */
+        }
+
+                       
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px;
+            margin: 20px 40px;
+        }
+
+        .box {
+            flex: 1;
+            max-width: 250px;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        img {
+            width: 140px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 16px; /* Diminui o tamanho do título */
+            color: #333333d2; /* Muda a cor do título */
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px; /* Diminui o tamanho do texto */
+            color: #666; /* Muda a cor do texto */
+        }
+                    
+    </style>
+</head>
+<body ">
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="adote.html">Adote</a>
+        <a href="contato.html">Contato</a>
+        
+    </nav>
+     <!-- Banner de fotos -->
+     <section class="banner">
+        <img src="img-banner\banner1.png" class="active" alt="Banner 1"> <!-- Substitua pelo caminho da sua imagem -->
+        <img src="img-banner\banner 2.png" alt="Banner 2"> <!-- Substitua pelo caminho da sua imagem -->
+        <img src="img-banner\banner4.png" alt="Banner 3"> <!-- Substitua pelo caminho da sua imagem -->
+    </section>
+
+    <section class="section">
+        <h3 class= "title" >Bem-vindo ao Adote - Conectando Vidas e Causas</h3>
+        <p class = "intro" >O Adote é um projeto dedicado a conectar pessoas e animais que necessitam de um lar em Santa Rita do Sapucaí e região. 
+            Trabalhamos em parceria com a ONG Canil de Cães e Gatos SRS e com lares temporários, proporcionando um ambiente seguro 
+            e acolhedor para animais que se encontram em situação de vulnerabilidade. Nosso objetivo é facilitar o processo de adoção, 
+            promovendo encontros entre pessoas dispostas a adotar e animais que esperam por uma nova chance.Quer fazer parte dessa corrente do bem e adotar? 
+            Entenda como funciona:</p>
+    </section>
+   
+    <section class = "steps">
+        
+        <div class="container">
+            <div class="box">
+                <img src="img-icon\icon1.png" alt="Ícone Ache seu pet">
+                <h3>Ache seu pet</h3>
+                <p>Visite uma ONG ou protetor parceiro para conhecer os pets disponíveis para adoção. Confira a lista aqui.</p>
+            </div>
+
+            <div class="box">
+                <img src="img-icon\icon2.png" alt="Ícone Formulário de Interesse">
+                <h3>Formulário de Interesse</h3>
+                <p>Preencha o formulário de interesse e entre em contato com os responsáveis. Entraremos em contato em até 48 horas.</p>
+            </div>
+
+            <div class="box">
+                <img src="img-icon\icon3.png" alt="Ícone Avaliação da adoção">
+                <h3>Avaliação da adoção</h3>
+                <p>A ONG fará a análise do seu perfil e do pet escolhido para garantir uma boa adoção.</p>
+            </div>
+
+            <div class="box">
+                <img src="img-icon\icon4.png" alt="Ícone Adoção Completa">
+                <h3>Adoção Completa</h3>
+                <p>Após aprovação, você poderá levar seu novo amigo para casa e completar o processo de adoção.</p>
+            </div>
+        </div>
+
+    <footer>
+        <p>© 2024 Adote: Conectando Vidas e Causas</p>
+    </footer>
+
+    <script>
+        // Script simples para alternar o banner de imagens
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.banner img');
+
+        function changeImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }
+
+        setInterval(changeImage, 10000); // Muda a imagem a cada 10 segundos
+    </script>
+</body>
+</html>

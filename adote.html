@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Animal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f60;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #f60;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .filters {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        .filters select {
+            margin: 10px;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .animal-card {
+            width: 200px;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        .animal-card img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function filterAnimals() {
+            const especie = document.getElementById('filter-especie').value;
+            const porte = document.getElementById('filter-porte').value;
+            const idade = document.getElementById('filter-idade').value;
+            
+            const cards = document.getElementsByClassName('animal-card');
+            for (let i = 0; i < cards.length; i++) {
+                const card = cards[i];
+                const cardEspecie = card.getAttribute('data-especie');
+                const cardPorte = card.getAttribute('data-porte');
+                const cardIdade = card.getAttribute('data-idade');
+
+                if ((especie === "todas" || cardEspecie === especie) &&
+                    (porte === "todos" || cardPorte === porte) &&
+                    (idade === "todas" || cardIdade === idade)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="adote.html">Adote</a>
+        <a href="contato.html">Contato</a>
+        
+    </nav>
+
+    <section class="filters">
+        <h3>Filtros de Adoção</h3>
+        <select id="filter-especie" onchange="filterAnimals()">
+            <option value="todas">Todas as Espécies</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+        </select>
+
+        <select id="filter-porte" onchange="filterAnimals()">
+            <option value="todos">Todos os Portes</option>
+            <option value="pequeno">Pequeno</option>
+            <option value="medio">Médio</option>
+            <option value="grande">Grande</option>
+        </select>
+
+        <select id="filter-idade" onchange="filterAnimals()">
+            <option value="todas">Todas as Idades</option>
+            <option value="filhote">Filhote</option>
+            <option value="adulto">Adulto</option>
+            <option value="idoso">Idoso</option>
+        </select>
+    </section>
+
+    <section class="container">
+        <div class="animal-card" data-especie="cachorro" data-porte="medio" data-idade="adulto">
+            <img src="C:\Users\PC\OneDrive\Desktop\exten.2\img-adote\brancomanga_amarelo.png" alt="Cachorro">
+            <p>Descrição: Mingau, Macho, Porte médio, 5 anos.</p>
+            <button class="like-btn">❤ </button>
+            <a href="formulario.html">Formulário de Adoção</a>
+        </div>
+        <div class="animal-card" data-especie="cachorro" data-porte="pequeno" data-idade="filhote">
+            <img src="C:\Users\PC\OneDrive\Desktop\exten.2\img-adote\filhotede manga_amarelo.png" alt="Cachorro">
+            <p>Descrição: Pingo, Fêmea, Porte pequeno, 4 meses.</p>
+            <button class="like-btn">❤ </button>
+            <a href="formulario.html">Formulário de Adoção</a>
+        </div>
+        <div class="animal-card" data-especie="gato" data-porte="pequeno" data-idade="adulto">
+            <img src="C:\Users\PC\OneDrive\Desktop\exten.2\img-adote\gato preto.png" alt="Gato">
+            <p>Descrição: Preta, Fêmea, Porte pequeno, 2 anos</p>
+            <button class="like-btn">❤ </button>
+            <a href="formulario.html">Formulário de Adoção</a>
+        </div>
+        <div class="animal-card" data-especie="cachorro" data-porte="pequeno" data-idade="idoso">
+            <img src="C:\Users\PC\OneDrive\Desktop\exten.2\img-adote\fiapo de manga_amarelo.png" alt="Cachorro">
+            <p>Descrição: Mila, Fêmea, Porte pequeno, 8 anos.</p>
+            <button class="like-btn">❤ </button>
+            <a href="formulario.html">Formulário de Adoção</a>
+        </div>
+        <div class="animal-card" data-especie="cachorro" data-porte="pequeno" data-idade="filhote">
+            <img src="C:\Users\PC\OneDrive\Desktop\exten.2\img-adote\preto_amarelo.png" alt="Cachorro">
+            <p>Descrição: Mike, Macho, Porte pequeno, 10 meses.</p>
+            <button class="like-btn">❤ </button>
+            <a href="formulario.html">Formulário de Adoção</a>
+        </div>
+        <div class="animal-card" data-especie="gato" data-porte="medio" data-idade="adulto">
+            <img src="C:\Users\PC\OneDrive\Desktop\exten.2\img-adote\gato rajado.png" alt="Gato">
+            <p>Descrição: Lua, Fêmea, Porte medio, 3 anos.</p>
+            <button class="like-btn">❤ </button>
+            <a href="formulario.html">Formulário de Adoção</a>
+        </div>
+        <div class="animal-card" data-especie="cachorro" data-porte="grande" data-idade="adulto">
+            <img src="C:\Users\PC\OneDrive\Desktop\exten.2\img-adote\cachorro caramelo.png" alt="Cachorro">
+            <p>Descrição: Leonel, Macho, Porte grande, 10 meses.</p>
+            <button class="like-btn">❤ </button>
+            <a href="formulario.html">Formulário de Adoção</a>
+        </div>
+        <div class="animal-card" data-especie="cachorro" data-porte="medio" data-idade="adulto">
+            <img src="C:\Users\PC\OneDrive\Desktop\exten.2\img-adote\noopymanga_amarelo.png" alt="Cachorro">
+            <p>Descrição: Snoopy, Macho, Porte medio, 4 anos.</p>
+            <button class="like-btn">❤ </button>
+            <a href="formulario.html">Formulário de Adoção</a>
+        </div>
+        <div class="animal-card" data-especie="gato" data-porte="medio" data-idade="adulto">
+            <img src="C:\Users\PC\OneDrive\Desktop\exten.2\img-adote\gato amarelo.png" alt="Gato">
+            <p>Descrição: Maria, Fêmea, Porte medio, 5 anos.</p>
+            <button class="like-btn">❤ </button>
+            <a href="formulario.html">Formulário de Adoção</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Adote: Conectando Vidas e Causas</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const likeButtons = document.querySelectorAll('.like-btn');
+    
+            likeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    if (button.classList.contains('liked')) {
+                        button.classList.remove('liked');
+                        button.textContent = '❤ ';
+                    } else {
+                        button.classList.add('liked');
+                        button.textContent = '💖 ';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

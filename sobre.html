@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote - Conectando Vidas e Causas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f60;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f60;
+            padding: 10px 20px;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #f60;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        footer {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .banner {
+            text-align: center;
+            padding: 40px;
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        .banner img.active {
+            opacity: 1;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .text {
+            width: 45%;
+        }
+
+        .text h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .text p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .image {
+            width: 45%;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+       
+</style>
+
+</head>
+<body ">
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="adote.html">Adote</a>
+        <a href="contato.html">Contato</a>
+        
+    </nav>
+     <!-- Banner de fotos -->
+     <section class="banner">
+        <img src="img-banner\banner1.png" class="active" alt="Banner 1"> <!-- Substitua pelo caminho da sua imagem -->
+        <img src="img-banner\banner 2.png" alt="Banner 2"> <!-- Substitua pelo caminho da sua imagem -->
+        <img src="img-banner\banner4.png" alt="Banner 3"> <!-- Substitua pelo caminho da sua imagem -->
+    </section>
+
+    <div class="container">
+        <div class="section">
+            <div class="text">
+                <h2>Nosso Compromisso</h2>
+                <p>A ONG Canil de Cães e Gatos SRS nasceu com o propósito de oferecer uma segunda chance a cães e gatos que precisam de um lar. Nossa missão é garantir que cada animal resgatado receba o cuidado necessário e tenha a oportunidade de encontrar uma família amorosa. Sabemos que o caminho não é fácil, mas cada adoção bem-sucedida nos motiva a continuar!</p>
+            </div>
+            <div class="image">
+                <img src="img-sobre\sobre-toto.png" alt="Cão e Gato">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text">
+                <h2>Desafios e Superações</h2>
+                <p>Diariamente, enfrentamos o desafio de divulgar os animais que estão prontos para adoção. Muitos deles chegam até nós após situações difíceis, e trabalhamos para garantir que eles estejam preparados para encontrar um novo lar. Além disso, buscamos melhorar o relacionamento com possíveis adotantes, oferecendo toda a orientação necessária para garantir que a adoção seja um sucesso.</p>
+            </div>
+            <div class="image">
+                <img src="img-sobre\adoteme.png" alt="Animais resgatados">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text">
+                <h2>Cadastro e Acompanhamento</h2>
+                <p>Para garantir a segurança e o bem-estar dos animais, realizamos um cadastro minucioso dos adotantes e dos pets. Isso nos permite acompanhar o processo e assegurar que cada animal esteja recebendo o cuidado adequado. Nossa equipe se dedica a orientar os adotantes sobre as necessidades específicas de cada animal, contribuindo para uma integração tranquila e feliz no novo lar.</p>
+            </div>
+            <div class="image">
+                <img src="img-sobre\gato e adotante.png" alt="Adotante e cão feliz">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text">
+                <h2>Como Você Pode Ajudar</h2>
+                <p>Adotar um animal é apenas uma das formas de ajudar. Nossa ONG também aceita doações, tanto de itens como ração, brinquedos e medicamentos, quanto de tempo, para quem deseja se voluntariar. Acreditamos que toda forma de apoio faz a diferença e permite que possamos continuar nosso trabalho de resgate e cuidado com esses animais.</p>
+            </div>
+            <div class="image">
+                <img src="img-sobre\sobre-castracao.png" alt="Doações recebidas">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text">
+                <h2>Nosso Processo de Adoção</h2>
+                <p>Temos um processo de adoção simples, porém responsável, que envolve a entrevista com o adotante, a apresentação dos animais e a orientação sobre cuidados necessários. Buscamos sempre entender as necessidades de cada família para encontrar o melhor amigo de quatro patas que se encaixe no perfil desejado.</p>
+            </div>
+            <div class="image">
+                <img src="img-sobre\adote-miau.png" alt="Processo de adoção">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text">
+                <h2>O Futuro que Sonhamos</h2>
+                <p>Sonhamos com um futuro onde cada animal tenha um lar e onde a conscientização sobre a adoção responsável seja uma realidade. Acreditamos que, com o apoio da comunidade, podemos fazer a diferença, transformando a vida de muitos animais e de suas futuras famílias. Convidamos você a fazer parte dessa história!</p>
+            </div>
+            <div class="image">
+                <img src="img-sobre\cahorro e humana.png" alt="Família adotiva feliz">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ONG Canil de Cães e Gatos SRS. Todos os direitos reservados.</p>
+    </footer>
